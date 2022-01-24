@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Profit calculator | for online business</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__body">
+        <!-- rigth panal -->
+        <div class="right__panle">
+          <div class="profile__sec">
+            <img src="./imges/profile.jpg" alt="Logo" />
+            <div class="discription">
+              <h3>Report for</h3>
+              <h5>Pravinbhai Rathod</h5>
+            </div>
+          </div>
+          <div class="manu">
+            <h2>Online margin calculater</h2>
+            <button class="btn form__btn">Form</button>
+            <button class="btn detail__btn">Details</button>
+          </div>
+        </div>
+
+        <!-- dashboard -->
+        <div class="dashboard">
+          <div class="title">
+            <h2>Dashboard</h2>
+            <div class="date">22/01/2021</div>
+          </div>
+          <div class="cards">
+            <div class="row">
+              <div class="card__col">
+                <p>Total Profit from messhoo</p>
+                <h1 class="messhoo__profit">₹ 0</h1>
+              </div>
+              <div class="card__col main__balance">
+                <h3>Meesho Investment</h3>
+                <h1 class="total__investment">₹ 0</h1>
+              </div>
+
+              <div class="card__col _Income">
+                <h3>Investment</h3>
+                <h1 class="Lowwer__investment">₹ 0</h1>
+              </div>
+              <!-- </div> -->
+
+              <!-- <div class="row"> -->
+              <div class="card__col Messho__income">
+                <h3>Total RTO Order</h3>
+                <h1 class="RTOorderLable">0 Order</h1>
+              </div>
+              <div class="card__col Messho__income">
+                <h3>Total Customer Ret. Order</h3>
+                <h1 class="Customereturnorder">0 Order</h1>
+              </div>
+              <div class="card__col Messho__income">
+                <h3>Customer Return Loss</h3>
+                <h1 class="ReturnLoss">₹ 0</h1>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            &copy;copyright By Chirag Rathod Design&Develope 2022
+          </div>
+        </div>
+
+        <!-- form details -->
+        <div class="form__borad">
+          <div class="title__form">
+            <h2>Profit calculation Form</h2>
+            <p>Add you product details and calculate your margin</p>
+          </div>
+          <form class="form">
+            <div class="form__input">
+              <label>Total Order</label>
+              <input
+                type="number"
+                placeholder="Enter Amount"
+                class="OrderAmount input"
+              />
+              <input
+                type="number"
+                placeholder="Enter stock number"
+                title="Stock Number"
+                class="OrderInventory input"
+              />
+            </div>
+            <div class="form__input">
+              <label>purchase price</label>
+              <input
+                type="text"
+                placeholder="Enter stock rupees per pice"
+                class="purchasePrice input"
+              />
+            </div>
+            <div class="form__input">
+              <label>RTO </label>
+              <input
+                type="text"
+                placeholder="Enter RTO pice"
+                class="RtoPiceInput input"
+              />
+            </div>
+            <div class="form__input">
+              <label>Customer return</label>
+              <input
+                type="text"
+                placeholder="Enter Meesho return pice"
+                class="cutomerreturnPice input"
+              />
+              <input
+                type="number"
+                placeholder="Enter messhoo charge"
+                title="Stock Number"
+                class="cutomerreturnCharge input"
+              />
+            </div>
+            <button class="btnsubmit">Submit</button>
+          </form>
+          <div class="copyright">
+            &copy;copyright By Chirag Rathod Design&Develope 2022
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

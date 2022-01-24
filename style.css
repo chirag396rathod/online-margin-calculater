@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#42275a, #734b6d);
+}
+
+.container__body {
+    width: 160vh;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+.container__body {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.right__panle {
+    width: 100%;
+    background-color: #2c254a;
+    padding: 0px 10px;
+    padding-bottom: 6rem;
+}
+
+.profile__sec img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.profile__sec {
+    text-align: center;
+    background-color: #3b3363;
+    padding: 3rem 0rem;
+    border-radius: 0px 0px 30px 30px;
+    border-bottom: 10px solid rgb(142, 192, 43);
+}
+
+.discription {
+    margin-top: 1rem;
+}
+
+.discription h3 {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.discription h5 {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.manu {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.manu h2 {
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 12px 15px;
+    font-size: 1rem;
+    background-color: #2c254a;
+    color: #fff;
+    outline: none;
+    border: none;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    font-weight: 400;
+}
+
+.btn:hover {
+    border: 1px solid #2c254a;
+    background-color: #fff;
+    color: #2c254a;
+    font-weight: 600;
+}
+
+. {
+    padding-top: 4rem;
+    text-align: center;
+    color: gray;
+}
+
+
+/* dashboard css */
+
+.dashboard {
+    padding: 1rem;
+    box-shadow: inset 0 0 20px #2c254a;
+}
+
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #3b3363;
+    padding: 10px 5px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.title h2 {
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+.title div {
+    font-size: 1.4rem;
+}
+
+.messhoo__profit {
+    color: #b4a75c;
+}
+
+.total__investment {
+    color: #a1f621;
+}
+
+.Lowwer__investment {
+    color: blueviolet;
+}
+
+.ReturnLoss {
+    color: red;
+}
+
+
+.Customereturnorder,
+.RTOorderLable {
+    color: orange;
+}
+
+/* card css */
+.cards {
+    padding-top: 2rem;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 1rem;
+}
+
+.card__col {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 2.5rem 0.7rem;
+    border-radius: 20px;
+    background-color: #c2dde6;
+    border-right: 10px solid orange;
+    box-shadow: 2px 7px 15px #2c254a;
+}
+
+.card__col:nth-child(1) {
+    border-right: 10px solid #b4a75c;
+}
+
+.card__col:nth-child(2) {
+    border-right: 10px solid #a1f621;
+}
+
+.card__col:nth-child(3) {
+    border-right: 10px solid blueviolet;
+}
+
+.card__col:nth-child(6) {
+    border-right: 10px solid red;
+}
+
+.card__col img {
+    width: 50px;
+    height: 50px;
+    margin-top: -3rem;
+}
+
+
+
+/* hidden class */
+.hidden {
+    /* transform: scale(0.5); */
+    transition: 1s ease-out;
+    display: none;
+    /* visibility: hidden; */
+}
+
+
+/* form css */
+
+.form__borad {
+    padding: 1rem;
+}
+
+.title__form {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgb(142, 192, 43);
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.title__form h2 {
+    font-size: 2rem;
+    color: rgb(142, 192, 43);
+}
+
+
+.form__input label {
+    font-size: 1.2rem;
+    color: rgb(142, 192, 43);
+    display: flex;
+    margin-right: 3rem;
+    padding: 20px 0px 4px 0px;
+}
+
+.form__input input {
+    padding: 10px 12px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.btnsubmit {
+    margin-top: 2rem;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #3b3363;
+    border: #fff;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btnsubmit:hover {
+    border: 1px solid #3b3363;
+    background: #fff;
+    color: #3b3363;
+}
+
+@media (max-width: 1000px) {
+    .container__body {
+        grid-template-columns: 40% 60%;
+    }
+
+    .right__panle {
+        padding-bottom: 2rem;
+    }
+
+    .row {
+        grid-template-columns: 47% 47%;
+    }
+
+    .cards {
+        height: 30rem;
+        overflow: scroll;
+    }
+
+    .card__col {
+        flex-basis: fill;
+    }
+
+    .OrderInventory,
+    .cutomerreturnCharge {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container__body {
+        width: 66%;
+        grid-template-columns: 100%;
+        margin: 1rem;
+    }
+
+    .row {
+        grid-template-columns: 90%;
+    }
+}
+
+@media (max-width: 432px) {
+    .container__body {
+        width: 90%;
+        grid-template-columns: 100%;
+    }
+
+    .row {
+        grid-template-columns: 100%;
+    }
+
+    .date {
+        display: none;
+    }
+}
